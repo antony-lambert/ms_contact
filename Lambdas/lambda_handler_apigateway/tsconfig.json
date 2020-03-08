@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "target": "es2018",
+        "lib": [
+            "es2018",
+            "dom"
+        ],
+        "module": "commonjs",
+        "outDir": "dist",
+        "sourceMap": false,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "types": [
+            "reflect-metadata",
+            "node"
+        ],
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "moduleResolution": "node",
+        "experimentalDecorators": true, // for inversify
+        "emitDecoratorMetadata": true, // for inversify
+        "esModuleInterop": true, // for Middy
+        "paths": {
+            "*": [
+                "node_modules/",
+            ],
+            "typings/*": [
+                "src/typings/*"
+            ]
+        },
+    },
+    "include": [
+        "src/**/*.ts",
+    ],
+}

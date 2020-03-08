@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "dd6dd179-7c76-4bfc-b07a-69b7d47bcff8",
+		"name": "ms_contacts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Contacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/dev/contacts",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"dev",
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Contacts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\": \"0635576021\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/dev/contacts",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"dev",
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1d7f21a7-10ee-47ff-81ec-692b6b6a8910",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d18a8e4d-3033-44ca-98fd-ddb2bf31b5a8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "bd20838f-6863-4423-93a3-ba502b5bcb5a",
+			"key": "url",
+			"value": "https://jog6xn712e.execute-api.eu-west-1.amazonaws.com",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
